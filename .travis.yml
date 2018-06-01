@@ -38,10 +38,10 @@ script:
 - ./test/rapidstring_test
 - cd test/CMakeFiles/rapidstring_test.dir/src
 - ls
-- if [[ $BUILD == Debug ]]; then gcov *.gcno; fi
+- if [[ $CC == gcc-7 ]]; then gcov *.gcno; fi
 
 after_success:
-- if [[ $BUILD == Debug ]]; then
+- if [[ $CC == gcc-7 ]]; then
   coveralls --gcov ../../../../../include/rapidstring.h;
   fi
 
