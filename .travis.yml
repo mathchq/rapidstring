@@ -45,7 +45,6 @@ after_success:
   which coveralls
   cd ../../../../
   coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../
-  # coveralls --gcov ../../../../../include/rapidstring.h;
   fi
 
 env:
