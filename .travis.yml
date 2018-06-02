@@ -43,7 +43,7 @@ script:
 after_success:
 - if [[ $CC == gcc-7 ]]; then
   cd ../../../../..;
-  coveralls  -b build -r ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -E ".*CMakeFiles.*" --exclude benchmark  --exclude test/CMakeLists.txt --gcov-options "\-lp";
+  coveralls  -b build -r ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -E ".*CMakeFiles.*" --exclude benchmark  --exclude test --gcov-options "\-lp";
   fi
 
 env:
