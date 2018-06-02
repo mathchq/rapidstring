@@ -42,9 +42,8 @@ script:
 
 after_success:
 - if [[ $CC == gcc-7 ]]; then
-  which coveralls;
-  cd ../../../../;
-  coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../  --exclude build --exclude benchmark --exclude tests  --gcov-options "\-lp";
+  cd ../../../../..;
+  coveralls  -b build -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ./  --exclude build --exclude benchmark --exclude test  --gcov-options "\-lp";
   fi
 
 env:
