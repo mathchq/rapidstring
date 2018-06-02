@@ -42,9 +42,9 @@ script:
 
 after_success:
 - if [[ $CC == gcc-7 ]]; then
-  which coveralls
-  cd ../../../../
-  coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../
+  which coveralls;
+  cd ../../../../;
+  coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../;
   fi
 
 env:
