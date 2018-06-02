@@ -44,7 +44,7 @@ after_success:
 - if [[ $CC == gcc-7 ]]; then
   which coveralls;
   cd ../../../../;
-  coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../;
+  coveralls  -b ./ -t tMUnrbng5NZDHK25YbasI8Wp7pmKZdmpS -r ../include/;
   fi
 
 env:
